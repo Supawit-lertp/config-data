@@ -5,7 +5,7 @@ spring:
         name: eureka-server
     info:
         app:
-            description: This is eureka service on spring boot application
+            description: This is eureka server on spring boot application
             name: Eureka Server
             version: 1.0.0
 eureka:
