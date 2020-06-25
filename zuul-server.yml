@@ -15,6 +15,16 @@ eureka:
 zuul:
   ignored-services: '*'
   routes:
+    auth-admin:
+      path: /admin/**
+      service-id: auth-service
     auth-service:
       path: /auth/**
+      sensitive-headers: 'Cookie,Set-Cookie '
       service-id: auth-service
+      strip-prefix: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
