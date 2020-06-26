@@ -29,6 +29,9 @@ zuul:
     customer-service:
       path: /customer-service/**
       service-id: customer-service
+    account-service:
+      path: /account-service/**
+      service-id: account-service
 management:
   endpoints:
     web:
