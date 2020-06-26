@@ -1,0 +1,14 @@
+server:
+  port: 8082
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+spring:
+  application:
+    name: customer-service
+  info:
+    app:
+      description: This is customer service on spring boot application
+      name: Customer Service
+      version: 1.0.0
